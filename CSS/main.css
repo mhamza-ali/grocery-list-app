@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    overflow: hidden;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+#main-cont{
+    height: 512px;
+
+    border-radius: 50px !important;
+    background: #121619 !important;
+    box-shadow:  20px 20px 60px #0f1315,
+             -20px -20px 60px #15191d !important;
+}
+
+#inputBox{
+    /* opacity: 2% !important; */
+}
+
+#addItem{
+    background: #09814A !important;
+    border-color: #035832 !important;
+}
+
+    #addItem:hover{
+        background: #034125 !important;
+    }
+
+    #addItem:focus{
+        box-shadow: none;
+    }
+
+#itemsList{
+    height: 200px;
+
+    overflow-y: auto;
+}
+
+.modifiedCard{
+    /* background: none !important; */
+    border: 2px solid #2D4739 !important;
+    color: white !important;
+}
+
+.disabledCard{
+    border: 2px solid rgb(163, 21, 21) !important;
+    color: white !important;
+}
+
+.itemText{
+    cursor: pointer;
+}
+
+/* Media Queries
+Phones, iPads, Tablets and Small Screens */
+@media screen and (max-width: 992px) {
+    body{
+        /* background: #121619; */
+        background: url(assets/bgSVG_Small.svg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #main-cont{
+        box-shadow: -20px -20px 60px #15191d5e !important;
+    }
+}
+
+/* Large Screens, Laptops, Desktops */
+@media screen and (min-width: 992px) {
+    body{
+        background: url(assets/bgSVG_Large.svg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
